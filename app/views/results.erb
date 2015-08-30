@@ -1,0 +1,8 @@
+<div id="results">
+	<p>Here are the studio's in <%= @zip %>:</p>
+	<ul>List of Results:
+		<% @results.each do |result| %>
+			<li><%= result %></li>
+		<% end %>
+	</ul>
+</div>
