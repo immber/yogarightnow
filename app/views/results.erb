@@ -2,7 +2,7 @@
 	<p>Here are the studio's in <%= @zip %>:</p>
 	<ul>List of Results:
 		<% @results.each do |result| %>
-			<li><% p result.url %></li>
+			<li><a href="<%= result.url %>"><%= result.name %></a></li>
 		<% end %>
 	</ul>
 </div>
